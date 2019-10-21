@@ -47,6 +47,7 @@ module.exports = (env, argv) => {
 
             /**
              * For github purposes!
+             * - Add in public path on the FaceDetectAttr.js
              */
             // publicPath: './face-detection-demo/',
             // path: path.resolve(__dirname, 'gh-pages')

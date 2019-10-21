@@ -14,7 +14,7 @@ class FaceDetectAttr {
 
         this.modelsUri = 'assets/models/';
         /* For github LIVE! */
-        // this.modelsUri = './face-recognition-demo/assets/models';
+        // this.modelsUri = './face-detection-demo/assets/models';
 
         this.detectionInterval = 100;
     }
