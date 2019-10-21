@@ -18,6 +18,8 @@ class ItemAttr {
 
         this.rotSpeedMin = 0.01;
         this.rotSpeedMax = 0.09;
+
+        this.defaultColor = '#f9ca24';
     }
 
 

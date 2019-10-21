@@ -47,6 +47,7 @@ export default class Item extends Element {
      */
     init() {
         this.points = [];
+        this.color = ITEMATTR.defaultColor;
 
         this.currAngle = 0;
         this.rotSpeed = Math2.randomInt(ITEMATTR.rotSpeedMin, ITEMATTR.rotSpeedMax, false);
@@ -132,7 +133,11 @@ export default class Item extends Element {
         this.context.save();
 
 
-        this.context.fillStyle = "white";
+        this.context.fillStyle = this.color;
+        this.context.lineWidth = 10;
+        this.context.shadowBlur = 15;
+        this.context.shadowColor = this.color;
+
         this.context.translate(this.position.x, this.position.y);
         this.context.rotate(this.currAngle);
 
