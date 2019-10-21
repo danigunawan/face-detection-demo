@@ -1,0 +1,72 @@
+/**
+ * ==================================================================================
+ * Menu stylesheet
+ * ==================================================================================
+ */
+
+
+/**
+ * @Variables
+ * ============================================================
+ */
+
+//
+
+
+/**
+ * @Extend
+ * ============================================================
+ */
+
+//
+
+
+/**
+ * @Styles
+ * ============================================================
+ */
+
+#menus {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+
+	.menu-border {
+		display: table;
+		width: 100%;
+		height: 100%;
+
+		.menu-list {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+
+			.menu-card {
+				position: relative;
+				max-width: 500px;
+				max-height: 400px;
+				margin: 0 auto;
+
+				.menu {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					visibility: hidden;
+
+					@include transition(opacity .2s ease-out);
+				}
+
+				.menu.menu--active {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}

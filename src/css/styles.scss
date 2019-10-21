@@ -1,0 +1,48 @@
+/**
+ * ==================================================================================
+ * Main stylesheet collection
+ * ==================================================================================
+ */
+
+@import 'partials/_base.scss';
+
+
+/**
+ * @vendors
+ * ============================================================
+ */
+
+@import 'vendors/_fontawesome.scss';
+
+
+/**
+ * @Partials
+ * ============================================================
+ */
+
+@import 'partials/_fields.scss';
+
+
+/**
+ * @Components
+ * ============================================================
+ */
+
+@import 'components/_gui.scss';
+@import 'components/_label.scss';
+@import 'components/_menu.scss';
+
+@import 'components/_video.scss';
+
+@import 'components/_loading.scss';
+@import 'components/_face-detection.scss';
+@import 'components/_face-expression.scss';
+@import 'components/_score.scss';
+
+
+/**
+ * @Pages
+ * ============================================================
+ */
+
+@import 'pages/_main.scss';

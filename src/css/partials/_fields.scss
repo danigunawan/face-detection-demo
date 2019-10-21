@@ -1,0 +1,67 @@
+/**
+ * ==================================================================================
+ * Fields
+ * ==================================================================================
+ */
+
+/**
+ * @Variables
+ * ==================================================================================
+ */
+
+//
+
+
+/**
+ * @Mixins
+ * ==================================================================================
+ */
+
+@mixin button-text-border($property) {
+	text-shadow: 2px 2px 0 $property, 2px -2px 0 $property, -2px 2px 0 $property,
+				-2px -2px 0 $property, 2px 0px 0 $property, 0px 2px 0 $property,
+				-2px 0px 0 $property, 0px -2px 0 $property;
+}
+
+
+/**
+ * @Extends
+ * ==================================================================================
+ */
+
+//
+
+
+/**
+ * @Buttons
+ * ==================================================================================
+ */
+
+.button {
+	font-size: 3em;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 0;
+    background: transparent;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px #333;
+
+	@include button-text-border(#333);
+    @include transition(color 0.2s ease);
+}
+
+.button:hover {
+
+}
+
+
+/**
+ * @Inputs
+ * ==================================================================================
+ */
+
+//

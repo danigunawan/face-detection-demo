@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+
+        <base href="/" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Face Detection Demo</title>
+        <meta name="description" content="Face Detection Demo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="Face Detection Demo">
+        <meta property="og:description" content="Face Detection Demo">
+        <meta property="og:url" content="/">
+        <meta property="og:site_name" content="Face Detection Demo">
+        <meta property="og:type" content="website">
+
+    </head>
+    <body>
+        <div id="main">
+
+            <video id="video"></video>
+            <canvas id="canvas"></canvas>
+
+
+            <div id="gui">
+
+                <div id="menus">
+                    <div class="menu-border">
+                        <div class="menu-list">
+                            <div class="menu-card">
+                                <div id="start-menu" class="menu">
+                                    <button id="startGame" class="button">Start Game</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="score" class="label">
+                    <p class="score__label">0</p>
+                    <!-- <p class="combo__label">0x</p> -->
+                </div>
+
+                <div id="face-detection" class="label">
+                    <p class="face-detection__label face-detection__label--waiting">Loading face detection</p>
+                    <p class="face-detection__label face-detection__label--not-detected">No face detected</p>
+                    <p class="face-detection__label face-detection__label--detected">Face detected</p>
+                </div>
+
+
+                <div id="loading" class="label">
+                    <div class="loading__border">
+                        <p class="loading__label">Loading...</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </body>
+
+</html>
