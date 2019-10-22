@@ -139,12 +139,9 @@ class Utils {
      * @return {Object}
      */
     getLoopIteration(arr, currIndex) {
-        let nextInc = currIndex + 1,
-            nextIndex = (nextInc) == arr.length ? 0 : nextInc;
-
         return {
             curr: arr[currIndex],
-            next: arr[nextIndex]
+            next: arr[(currIndex + 1) % arr.length]
         };
     }
 
